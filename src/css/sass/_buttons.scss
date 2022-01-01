@@ -1,0 +1,62 @@
+.btn {
+  display: inline-block;
+  color: $white-light;
+  padding: 8px 24px;
+  background: linear-gradient(224.78deg, #5390e3 8.12%, #1357b3 92.21%);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  transition: ease 0.3s;
+
+  @include typeface-2(p3, desktop);
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+select,
+option {
+  height: 48px;
+}
+
+a {
+  text-decoration: none;
+  @include typeface-2(p3, desktop);
+  color: $white-light;
+  transition: ease 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+input {
+  accent-color: $primary-normal;
+}
+
+input,
+select,
+option,
+textarea {
+  padding: 10px 12px;
+  background-color: $black-light;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  width: 100%;
+  color: $white-light;
+  @include typeface-2(p3, desktop);
+}
+
+.btn-search {
+  cursor: pointer;
+  height: 48px;
+  width: 56px;
+  background-image: url('../svg/icon-search.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $black-light;
+  border: none;
+  border-radius: 4px;
+  transform: translate3d(-6px, 0, 0);
+}
