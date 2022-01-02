@@ -1,7 +1,7 @@
 import React from 'react'
 import CardList from './CardList'
 
-const Card = () => {
+const Card = ({ cards }) => {
   return (
     <>
       <section className="container">
@@ -10,7 +10,7 @@ const Card = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna
           pharetra ut ac, pellentesque.
         </p>
-        <CardList />
+        <CardList cards={cards} />
       </section>
     </>
   )

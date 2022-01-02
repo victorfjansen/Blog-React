@@ -1,12 +1,12 @@
 import React from 'react'
 import CardComponent from '../CardComponent'
 
-const CardList = () => {
+const CardList = ({ cards }) => {
   return (
     <div className="row mt-4">
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
+      {cards.map(card => (
+        <CardComponent data={card} key={card.id} />
+      ))}
     </div>
   )
 }

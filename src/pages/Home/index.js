@@ -22,6 +22,7 @@ const Home = () => {
       try {
         const response = await api.get('/posts?_star=5&_limit=2&_order=desc')
         setMain(response.data)
+        setError(null)
       } catch (err) {
         setError(err.message)
       }
@@ -32,6 +33,7 @@ const Home = () => {
       try {
         const response = await api.get('/posts?_sort=date&_order=desc&_limit=1')
         setBanner(response.data)
+        setError(null)
       } catch (err) {
         setError(err.message)
       }
@@ -42,6 +44,7 @@ const Home = () => {
       try {
         const response = await api.get('/posts?_limit=3')
         setMost(response.data)
+        setError(null)
       } catch (err) {
         setError(err.message)
       }
@@ -52,8 +55,8 @@ const Home = () => {
     <>
       <Hero />
       <Main main={main} />
-      <Card />
-      <Banner />
+      <Card cards={most} />
+      <Banner banner={banner} />
     </>
   )
 }
