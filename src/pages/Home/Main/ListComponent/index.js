@@ -16,8 +16,6 @@ const ListComponent = ({ data }) => {
     })()
   }, [data.id_user, data])
 
-  console.log(data)
-
   if (user.name) {
     return (
       <div className="bb-black py-4">
