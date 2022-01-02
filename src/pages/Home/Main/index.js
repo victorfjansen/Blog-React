@@ -16,8 +16,6 @@ const Main = () => {
     })()
   }, [request])
 
-  console.log(data)
-
   if (loading) return <Loading />
   else if (error) {
     return <Erro error={error} />

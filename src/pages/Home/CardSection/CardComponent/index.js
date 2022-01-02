@@ -1,7 +1,6 @@
 import React from 'react'
 
 const CardComponent = ({ data }) => {
-  console.log(data)
   return (
     <div className="grid-4 card p-0">
       <div className="thumb hidden">

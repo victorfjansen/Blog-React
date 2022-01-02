@@ -38,8 +38,8 @@ const Header = () => {
                     y2="19.982"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5390E3" />
-                    <stop offset="1" stop-color="#1357B3" />
+                    <stop stopColor="#5390E3" />
+                    <stop offset="1" stopColor="#1357B3" />
                   </linearGradient>
                   <linearGradient
                     id="paint1_linear_88_1864"
@@ -49,8 +49,8 @@ const Header = () => {
                     y2="45.7325"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#5390E3" />
-                    <stop offset="1" stop-color="#1357B3" />
+                    <stop stopColor="#5390E3" />
+                    <stop offset="1" stopColor="#1357B3" />
                   </linearGradient>
                 </defs>
               </svg>
