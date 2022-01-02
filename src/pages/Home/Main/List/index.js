@@ -1,11 +1,12 @@
 import React from 'react'
 import ListComponent from '../ListComponent'
 
-const List = () => {
+const List = ({ main }) => {
   return (
     <div className="grid-7">
-      <ListComponent />
-      <ListComponent />
+      {main.map(item => {
+        return <ListComponent data={item} key={item.id} />
+      })}
     </div>
   )
 }

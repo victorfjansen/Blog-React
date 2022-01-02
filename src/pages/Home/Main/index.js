@@ -2,12 +2,12 @@ import React from 'react'
 import List from './List'
 import MoreVoted from './MoreVoted'
 
-const Main = () => {
+const Main = ({ main }) => {
   return (
     <section className="container">
       <div className="row">
         <MoreVoted />
-        <List />
+        <List main={main} />
       </div>
     </section>
   )
