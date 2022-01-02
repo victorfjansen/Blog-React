@@ -1,0 +1,22 @@
+.HeroSvg {
+}
+
+.HeroSvg #baixo {
+  animation: animeBaixo 4s ease-in-out alternate infinite;
+}
+
+.HeroSvg #cima {
+  animation: animeCima 4s ease-in-out alternate infinite;
+}
+
+@keyframes animeBaixo {
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes animeCima {
+  to {
+    transform: translateY(15px);
+  }
+}
