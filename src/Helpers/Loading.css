@@ -1,4 +1,4 @@
-.w-100 svg {
+.animeSvg svg {
   animation: animeLoading 1.5s alternate infinite;
 }
 

@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './LogoAnimation.css'
 
 const Hero = () => {
   return (
     <section className="container">
-      <div className="row">
+      <div className="row  mt-6">
         <div className="grid-6">
           <h1 className="h0">
             Blog <span>.</span>
@@ -13,9 +14,9 @@ const Hero = () => {
             Um blog para todos. Escrever. Ler. Comentar. Contribuir. Aprender.
             Conectar.
           </p>
-          <a href="" className="btn mt-4">
+          <Link to="/login" className="btn mt-4">
             Começar a escrever
-          </a>
+          </Link>
         </div>
         <div className="grid-6">
           <svg

@@ -9,12 +9,12 @@ import Main from './Main'
 
 const Home = () => {
   return (
-    <>
+    <div className="animeLeft">
       <Hero />
       <Main />
       <Card />
       <Banner />
-    </>
+    </div>
   )
 }
 

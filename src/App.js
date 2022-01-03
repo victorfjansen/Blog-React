@@ -1,14 +1,35 @@
 import Header from './pages/Header'
 import Footer from './pages/Footer'
-import Home from './pages/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+//Import components
+
+import Home from './pages/Home'
+import Contato from 'pages/Contato'
+import About from 'pages/About'
+import Login from 'pages/Login'
+import NotFound from 'pages/NotFound'
+import Post from 'pages/Post'
+import Profile from 'pages/Profile'
+import Search from 'pages/Search'
 
 function App() {
   return (
     <>
-      <Header />
-      <Home />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/sobre" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/post" element={<Post />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/search" element={<Search />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }
