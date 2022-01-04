@@ -5,7 +5,7 @@ import './LogoAnimation.css'
 const Hero = () => {
   return (
     <section className="container">
-      <div className="row  mt-6">
+      <div className="row">
         <div className="grid-6">
           <h1 className="h0">
             Blog <span>.</span>

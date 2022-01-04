@@ -1,0 +1,13 @@
+.warning {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  z-index: 1000;
+  min-width: 300px;
+}
+
+@media (max-width: 520px) {
+  .warning {
+    min-width: 200px;
+  }
+}

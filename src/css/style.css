@@ -1757,7 +1757,7 @@ header {
   align-items: center;
   border-bottom: 1px solid #151b26;
   position: fixed;
-  z-index: 10000;
+  z-index: 999;
   background-color: rgba(6, 9, 15, 0.3);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
