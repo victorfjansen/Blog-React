@@ -1,3 +1,9 @@
+#JSON_SERVER
+
+## É necessário a utilização do Json-Server para o projeto funcionar corretamente.
+
+## Em seu terminal, digite "json-server --watch --port 4000 db.json"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
