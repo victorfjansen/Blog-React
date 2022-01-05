@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import imagePeople from '../../profile/jansen.jpg'
 
 const Profile = () => {
@@ -25,12 +26,12 @@ const Profile = () => {
             </p>
           </div>
           <div className="grid-6 flex-center">
-            <a href="#" className="btn">
+            <Link to="/" className="btn">
               Meus Dados
-            </a>
-            <a href="#" className="btn ml-3">
+            </Link>
+            <Link to="/" className="btn ml-3">
               Adicionar Post
-            </a>
+            </Link>
           </div>
         </div>
       </section>
