@@ -1,12 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CardComponent = ({ data }) => {
+  console.log(data)
   return (
     <div className="grid-4 card p-0">
       <div className="thumb hidden">
-        <a href="#">
+        <Link to={`/post/${data.id}`}>
           <img src={`${data.imageUrl}`} alt="Imagem 1" />
-        </a>
+        </Link>
       </div>
       <div className="mt-2 px-2">
         <h6 className="color-gray">{data.date}</h6>
@@ -16,9 +18,7 @@ const CardComponent = ({ data }) => {
         <p className="mt-1">{data.resume}</p>
 
         <div className="my-3">
-          <a href="#" className="link color-primary">
-            Ler Mais
-          </a>
+          <Link to={`/post/${data.id}`}>Ler Mais</Link>
         </div>
       </div>
     </div>

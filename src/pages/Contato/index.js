@@ -1,6 +1,11 @@
+import React from 'react'
 import { ReactComponent as InstaIcon } from '../../svg/icon-instagram.svg'
 
 const Contact = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   function onSubmit(event) {
     event.preventDefault()
   }

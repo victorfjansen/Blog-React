@@ -5,7 +5,7 @@ const List = ({ main }) => {
   return (
     <div className="grid-7">
       {main.map(item => {
-        return <ListComponent data={item} key={item.id} />
+        return <ListComponent dados={item} key={item.id} />
       })}
     </div>
   )

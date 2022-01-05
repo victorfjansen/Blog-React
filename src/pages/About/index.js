@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import './LogoAnimation.css'
 
 const About = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <section className="container h-100 animeLeft">
       <div className="row mt-6">

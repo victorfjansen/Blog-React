@@ -2,6 +2,9 @@ import React from 'react'
 import { ReactComponent as LogoLogin } from '../../svg/blog-logo2.svg'
 
 const Login = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <section className="container w-100 h-100 animeLeft">
       <div className="row pt-4">

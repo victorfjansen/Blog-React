@@ -12,6 +12,7 @@ import NotFound from 'pages/NotFound'
 import Post from 'pages/Post'
 import Profile from 'pages/Profile'
 import Search from 'pages/Search'
+import React from 'react'
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Route path="/sobre" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/post" element={<Post />} />
+          <Route path="/post/:idPost" element={<Post />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/search" element={<Search />} />
         </Routes>

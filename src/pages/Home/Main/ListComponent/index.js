@@ -1,47 +1,49 @@
+import Erro from 'Helpers/Erro'
+import Loading from 'Helpers/Loading'
+import useFetch from 'hooks/useFetch'
 import React from 'react'
-import api from 'services/api'
+import { Link } from 'react-router-dom'
+import { FETCH_LISTCOMPONENT } from 'services/api'
 
-const ListComponent = ({ data }) => {
-  const [user, setUser] = React.useState({})
+const ListComponent = ({ dados }) => {
+  const { data, error, request, loading } = useFetch()
 
   React.useEffect(() => {
     ;(async () => {
-      let response
-      try {
-        response = await api.get(`/user?id=${data.id_user}`)
-        setUser(response.data[0])
-      } catch {
-        window.alert('algo deu Errado, tente novamente mais tarde')
-      }
+      const { url, options } = FETCH_LISTCOMPONENT(`/user?id=${dados.id_user}`)
+      await request(url, options)
+      /* response = await api.get(`/user?id=${dados.id_user}`) */
     })()
-  }, [data.id_user, data])
+  }, [request, dados.id_user])
 
-  if (user.name) {
+  if (loading) return <Loading />
+  else if (error) return <Erro error={error} />
+  else {
     return (
       <div className="bb-black py-4">
-        <h6 className="color-gray">{data.date}</h6>
-        <h6 className="uppercase color-primary">{data.category}</h6>
+        <h6 className="color-gray">{dados.date}</h6>
+        <h6 className="uppercase color-primary">{dados.category}</h6>
 
-        <h4>{data.title}</h4>
-        <p className="mt-1">{data.resume}</p>
+        <Link className="link-title" to={`/post/${dados.id}`}>
+          <h4>{dados.title}</h4>
+        </Link>
+        <p className="mt-1">{dados.resume}</p>
 
         <div className="flex-start-row mt-3">
           <div className="profile">
             <img
-              src={`${user.ImageProfile}`}
+              src={`${data[0].ImageProfile}`}
               className="profile-img"
               alt="profile img"
             />
           </div>
           <div className="ml-1">
-            <h6 className="color-primary">{user.name}</h6>
-            <h6 className="color-gray">@{user.user}</h6>
+            <h6 className="color-primary">{data[0].name}</h6>
+            <h6 className="color-gray">@{data[0].user}</h6>
           </div>
         </div>
       </div>
     )
-  } else {
-    return <p>Carregando...</p>
   }
 }
 

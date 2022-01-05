@@ -3,7 +3,7 @@ import './Loading.css'
 
 const Loading = () => {
   return (
-    <div className="flex-center text-center w-100 h-100 animeSvg">
+    <div className="flex-center text-center w-100 container animeSvg">
       <svg
         width="269"
         height="326"

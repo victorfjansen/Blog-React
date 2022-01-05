@@ -34,3 +34,30 @@ export const VIEW_FETCH = url => {
     },
   }
 }
+
+export const FETCH_LISTCOMPONENT = url => {
+  return {
+    url: baseUrl + url,
+    options: {
+      method: 'GET',
+    },
+  }
+}
+
+export const POST_GET = url => {
+  return {
+    url: baseUrl + url,
+    options: {
+      method: 'GET',
+    },
+  }
+}
+
+export const PROFILE_DATA = url => {
+  return {
+    url: baseUrl + url,
+    options: {
+      method: 'GET',
+    },
+  }
+}

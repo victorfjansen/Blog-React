@@ -8,6 +8,9 @@ import Card from './CardSection'
 import Main from './Main'
 
 const Home = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="animeLeft">
       <Hero />

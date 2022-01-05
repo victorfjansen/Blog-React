@@ -2,6 +2,7 @@ import Erro from 'Helpers/Erro'
 import Loading from 'Helpers/Loading'
 import useFetch from 'hooks/useFetch'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { BANNER_FETCH } from 'services/api'
 
 const Banner = () => {
@@ -21,9 +22,9 @@ const Banner = () => {
   else
     return (
       <section className="container">
-        <div className="img-banner hidden">
+        <Link to={`/post/${data[0].id}`} className="img-banner hidden">
           <img src={data[0].imageUrl} alt="Banner" />
-        </div>
+        </Link>
         <div className="row mt-3">
           <h6 className="color-gray text-center">{data[0].date}</h6>
           <h6 className="uppercase color-primary text-center">
@@ -34,10 +35,7 @@ const Banner = () => {
           <p className="mt-1 text-center">{data[0].resume}</p>
 
           <div className="my-3 flex-center">
-            <a href="" className="link color-primary">
-              {' '}
-              Ler Mais{' '}
-            </a>
+            <Link to={`/post/${data[0].id}`}>Ler Mais</Link>
           </div>
         </div>
       </section>
