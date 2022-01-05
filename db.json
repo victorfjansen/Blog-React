@@ -3,7 +3,7 @@
     {
       "id": 1,
       "id_user": 1,
-      "date": "14 NOV 2021",
+      "date": "31 DEZ 2021",
       "imageUrl": "https://nyousefali.com.br/blog/img/06.png",
       "category": "games",
       "title": "O que tem de novo no PS5? Tudo o que você precisa saber.",
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "id_user": 1,
-      "date": "18 SET 2021",
+      "date": "13 DEZ 2021",
       "imageUrl": "https://nyousefali.com.br/blog/img/07.png",
       "category": "tecnologia",
       "title": "Novos processadores da 12° geração da intel chegaram.",
@@ -30,8 +30,8 @@
     },
     {
       "id": 3,
-      "id_user": 3,
-      "date": "01 NOV 2021",
+      "id_user": 1,
+      "date": "24 DEZ 2021",
       "imageUrl": "https://nyousefali.com.br/blog/img/09.png",
       "category": "fotografia",
       "title": "Qual a melhor câmera CxB para fotos e vídeos em 2021?",
@@ -44,8 +44,8 @@
     },
     {
       "id": 4,
-      "id_user": 3,
-      "date": "10 OUT 2021",
+      "id_user": 1,
+      "date": "01 JAN 2022",
       "imageUrl": "https://nyousefali.com.br/blog/img/03.png",
       "category": "cinema",
       "title": "Top 10 Filmes de 2021.",
@@ -58,8 +58,8 @@
     },
     {
       "id": 5,
-      "id_user": 2,
-      "date": "07 OUT 2021",
+      "id_user": 1,
+      "date": "05 JAN 2022",
       "imageUrl": "https://nyousefali.com.br/blog/img/01.png",
       "category": "tecnologia",
       "title": "Novos Mackbooks em 2021.",
@@ -72,8 +72,8 @@
     },
     {
       "id": 6,
-      "id_user": 3,
-      "date": "07 OUT 2021",
+      "id_user": 1,
+      "date": "02 JAN 2022",
       "imageUrl": "https://nyousefali.com.br/blog/img/02.png",
       "category": "tecnologia",
       "title": "Air Pods 3° geração vs. Air Pods Pro",
@@ -87,7 +87,7 @@
     {
       "id": 7,
       "id_user": 1,
-      "date": "07 NOV 2021",
+      "date": "27 DEZ 2021",
       "imageUrl": "https://nyousefali.com.br/blog/img/05.png",
       "category": "tecnologia",
       "title": "Ainda vale a pena o PS4 Pro em 2021?",
@@ -101,7 +101,7 @@
     {
       "id": 8,
       "id_user": 1,
-      "date": "22 NOV 2021",
+      "date": "09 DEZ 2021",
       "imageUrl": "https://nyousefali.com.br/blog/img/08.png",
       "category": "tecnologia",
       "title": "PC Gamer em 2021? Está muito caro.",
@@ -113,8 +113,9 @@
       "status": true
     },
     {
+      "id": 9,
       "id_user": 1,
-      "date": "2021-11-29",
+      "date": "09 NOV 2021",
       "imageUrl": "https://nyousefali.com.br/blog/img/08.png",
       "category": "cinema",
       "title": "O novo filme do Spider-man no way home",
@@ -123,31 +124,12 @@
       "duration": "7",
       "star": "4",
       "views": "10",
-      "status": true,
-      "id": 9
+      "status": true
     }
   ],
   "user": [
     {
       "id": 1,
-      "user": "victorfjansen",
-      "name": "Victor",
-      "surname": "Jansen",
-      "token": "E10ADC3949BA59ABBE56E057F20F883E",
-      "description": "Desenvolvedor Front-End com 4 anos de experiência. Um entusiasta por arquitetura de software e motions design que vem aplicando seus conceitos e projetos ao longo dos anos. Atualmente trabalho no PicPay como Jovem Aprendiz e sempre estou buscando saber mais. ReactJS, VueJs, Nuxt e Strapi pro Back-End. Também adepto de techs como GSAP e ThreeJS para animações",
-      "ImageProfile": "https://avatars.githubusercontent.com/u/83790355?v=4"
-    },
-    {
-      "id": 2,
-      "user": "victorfjansen",
-      "name": "Victor",
-      "surname": "Jansen",
-      "token": "E10ADC3949BA59ABBE56E057F20F883E",
-      "description": "Desenvolvedor Front-End com 4 anos de experiência. Um entusiasta por arquitetura de software e motions design que vem aplicando seus conceitos e projetos ao longo dos anos. Atualmente trabalho no PicPay como Jovem Aprendiz e sempre estou buscando saber mais. ReactJS, VueJs, Nuxt e Strapi pro Back-End. Também adepto de techs como GSAP e ThreeJS para animações",
-      "ImageProfile": "https://avatars.githubusercontent.com/u/83790355?v=4"
-    },
-    {
-      "id": 3,
       "user": "victorfjansen",
       "name": "Victor",
       "surname": "Jansen",

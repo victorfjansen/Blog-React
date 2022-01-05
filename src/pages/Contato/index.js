@@ -1,3 +1,4 @@
+import Head from 'Helpers/Head'
 import React from 'react'
 import { ReactComponent as InstaIcon } from '../../svg/icon-instagram.svg'
 
@@ -12,6 +13,7 @@ const Contact = () => {
 
   return (
     <section className="container animeLeft">
+      <Head title="Contato" />
       <div className="row">
         <div className="grid-6">
           <h3>Entre em contato</h3>

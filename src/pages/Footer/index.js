@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ReactComponent as LogoFooter } from 'svg/blog-logo2.svg'
 
 const Footer = () => {
@@ -11,40 +12,23 @@ const Footer = () => {
 
         <div className="row pb-3 bb-black">
           <div className="grid-3">
-            <h4>Posts</h4>
-            <div className="flex-start-column mt-2">
-              <a href="#" className="color-gray link-footer">
-                Mais vistos
-              </a>
-              <a href="#" className="color-gray link-footer">
-                Mais comentados
-              </a>
-              <a href="#" className="color-gray link-footer">
-                Mais populares
-              </a>
-              <a href="#" className="color-gray link-footer">
-                Mais recentes
-              </a>
-            </div>
-          </div>
-
-          <div className="grid-3">
             <h4>Categorias</h4>
             <div className="flex-start-column mt-2">
-              <a href="#" className="color-gray link-footer">
+              <Link to="/search/tecnologia" className="color-gray link-footer">
                 Tecnologia
-              </a>
-              <a href="#" className="color-gray link-footer">
+              </Link>
+              <Link to="/search/games" className="color-gray link-footer">
                 Games
-              </a>
-              <a href="#" className="color-gray link-footer">
+              </Link>
+              <Link to="/search/fotografia" className="color-gray link-footer">
                 Fotografia
-              </a>
-              <a href="#" className="color-gray link-footer">
+              </Link>
+              <Link to="/search/cinema" className="color-gray link-footer">
                 Cinema
-              </a>
+              </Link>
             </div>
           </div>
+          <div className="grid-3"></div>
 
           <div className="grid-6">
             <h4 className="mb-2">Quer ser avisado dos novos posts do blog?</h4>

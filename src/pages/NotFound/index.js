@@ -1,3 +1,4 @@
+import Head from 'Helpers/Head'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -7,6 +8,7 @@ const NotFound = () => {
   }, [])
   return (
     <section className="container v-100 h-100 animeLeft">
+      <Head title="Não encontrado" />
       <div className="row flex-center">
         <img src="svg/blog-logo2.svg" className="icon-l" alt="" />
       </div>

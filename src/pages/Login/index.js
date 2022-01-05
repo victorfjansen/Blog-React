@@ -1,3 +1,4 @@
+import Head from 'Helpers/Head'
 import React from 'react'
 import { ReactComponent as LogoLogin } from '../../svg/blog-logo2.svg'
 
@@ -7,6 +8,7 @@ const Login = () => {
   }, [])
   return (
     <section className="container w-100 h-100 animeLeft">
+      <Head title="Login" />
       <div className="row pt-4">
         <div className="grid-4 disappear"></div>
         <div className="grid-4">

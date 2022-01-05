@@ -6,6 +6,7 @@ import Hero from './Hero'
 import Banner from './Banner'
 import Card from './CardSection'
 import Main from './Main'
+import Head from 'Helpers/Head'
 
 const Home = () => {
   React.useEffect(() => {
@@ -13,6 +14,7 @@ const Home = () => {
   }, [])
   return (
     <div className="animeLeft">
+      <Head title="Home" />
       <Hero />
       <Main />
       <Card />

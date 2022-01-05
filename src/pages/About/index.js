@@ -1,3 +1,4 @@
+import Head from 'Helpers/Head'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './LogoAnimation.css'
@@ -8,6 +9,7 @@ const About = () => {
   }, [])
   return (
     <section className="container h-100 animeLeft">
+      <Head title="Sobre" />
       <div className="row mt-6">
         <div className="grid-6">
           <h2 className="h3">
