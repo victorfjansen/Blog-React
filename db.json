@@ -134,26 +134,26 @@
       "name": "Victor",
       "surname": "Jansen",
       "token": "E10ADC3949BA59ABBE56E057F20F883E",
-      "description": "Front-End Dev & UI motion based in Brasília/Brazil, more than 8 years of experience in product development (user interaction, movement, performance, design faithful to design) and creating interfaces with out-of-the-box animations.",
+      "description": "Desenvolvedor Front-End com 4 anos de experiência. Um entusiasta por arquitetura de software e motions design que vem aplicando seus conceitos e projetos ao longo dos anos. Atualmente trabalho no PicPay como Jovem Aprendiz e sempre estou buscando saber mais. ReactJS, VueJs, Nuxt e Strapi pro Back-End. Também adepto de techs como GSAP e ThreeJS para animações",
       "ImageProfile": "https://avatars.githubusercontent.com/u/83790355?v=4"
     },
     {
       "id": 2,
-      "user": "emily",
-      "name": "Emily",
-      "surname": "Grace",
+      "user": "victorfjansen",
+      "name": "Victor",
+      "surname": "Jansen",
       "token": "E10ADC3949BA59ABBE56E057F20F883E",
-      "description": "Sou UI Designer e apaixonada por tecnologia. Crio interfaces e escrevo para o blog.",
-      "ImageProfile": "https://nyousefali.com.br/blog/profile/emily.png"
+      "description": "Desenvolvedor Front-End com 4 anos de experiência. Um entusiasta por arquitetura de software e motions design que vem aplicando seus conceitos e projetos ao longo dos anos. Atualmente trabalho no PicPay como Jovem Aprendiz e sempre estou buscando saber mais. ReactJS, VueJs, Nuxt e Strapi pro Back-End. Também adepto de techs como GSAP e ThreeJS para animações",
+      "ImageProfile": "https://avatars.githubusercontent.com/u/83790355?v=4"
     },
     {
       "id": 3,
-      "user": "alex",
-      "name": "Alex",
-      "surname": "Jacob",
+      "user": "victorfjansen",
+      "name": "Victor",
+      "surname": "Jansen",
       "token": "E10ADC3949BA59ABBE56E057F20F883E",
-      "description": "Sou fotógrafo profissional, amante de cinema e tecnologia. Colunista e nas horas vagas escrevo para o blog.",
-      "ImageProfile": "https://nyousefali.com.br/blog/profile/alex.png"
+      "description": "Desenvolvedor Front-End com 4 anos de experiência. Um entusiasta por arquitetura de software e motions design que vem aplicando seus conceitos e projetos ao longo dos anos. Atualmente trabalho no PicPay como Jovem Aprendiz e sempre estou buscando saber mais. ReactJS, VueJs, Nuxt e Strapi pro Back-End. Também adepto de techs como GSAP e ThreeJS para animações",
+      "ImageProfile": "https://avatars.githubusercontent.com/u/83790355?v=4"
     }
   ]
 }

@@ -27,7 +27,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/post/:idPost" element={<Post />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="/search/:searchWord" element={<Search />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,7 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './LogoHeader.css'
 const Header = () => {
+  const [data, setData] = React.useState('')
+  const navigate = useNavigate()
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    navigate(`/search/${data}`)
+  }
   return (
     <>
       <header className="px-2 py-1">
@@ -71,8 +78,13 @@ const Header = () => {
 
         <div className="flex-start-row">
           <div className="search">
-            <form className="flex">
-              <input type="text" name="search" placeholder="Buscar" />
+            <form className="flex" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="search"
+                placeholder="Buscar"
+                onChange={({ target }) => setData(target.value)}
+              />
               <button className="btn-search"></button>
             </form>
           </div>

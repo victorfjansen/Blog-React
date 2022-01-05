@@ -14,7 +14,9 @@ const CardComponent = ({ data }) => {
         <h6 className="color-gray">{data.date}</h6>
         <h6 className="uppercase color-primary">{data.category}</h6>
 
-        <h4>{data.title}</h4>
+        <Link to={`/post/${data.id}`}>
+          <h4>{data.title}</h4>
+        </Link>
         <p className="mt-1">{data.resume}</p>
 
         <div className="my-3">
